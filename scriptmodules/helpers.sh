@@ -58,7 +58,7 @@ function hasFlag() {
 
 function isPlatform() {
     # isPlatform "rpi" matches both rpi1 and rpi2
-    if [[ "$1" == "rpi" ]] && [[ "$__platform" == "rpi1" || "$__platform" == "rpi2" ]]; then
+    if [[ "$1" == "rpi" ]] && [[ "$__platform" == "rpi1" || "$__platform" == "rpi2" || "$__platform" == "rpi2jessie" ]]; then
         return 0
     fi
     if [[ "$__platform" == "$1" ]]; then
